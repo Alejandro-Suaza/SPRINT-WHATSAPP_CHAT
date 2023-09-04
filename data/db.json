@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Pepito",
+      "lastName": "Perez",
+      "phoneNumber": "12345",
+      "password": "contra1",
+      "img": "url_img1",
+      "flag": "conectado"
+    },
+    {
+      "id": 2,
+      "name": "Andres",
+      "lastName": "Cano",
+      "phoneNumber": "54321",
+      "password": "contra2",
+      "img": "url_img2",
+      "flag": "conectado"
+    },
+    {
+      "id": 3,
+      "name": "asd",
+      "lastName": "asd",
+      "phoneNumber": "asd",
+      "password": "asd",
+      "img": "C:\\fakepath\\users2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "sdfssd",
+      "lastName": "fsdfsdf",
+      "phoneNumber": "sdfsdfsdfsd",
+      "password": "fsdfsdf",
+      "img": "C:\\fakepath\\users2.jpg"
+    },
+    {
+      "id": 5,
+      "name": "sada",
+      "lastName": "sadasd",
+      "phoneNumber": "asdasda",
+      "password": "sdasd",
+      "img": "C:\\fakepath\\users2.jpg"
+    },
+    {
+      "id": 6,
+      "name": "adf",
+      "lastName": "adfafd",
+      "phoneNumber": "dafadf",
+      "password": "adfaf",
+      "img": "C:\\fakepath\\users2.jpg"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "idUser1": 1,
+      "idUser2": 2,
+      "conversaciones": [
+        {
+          "sendBy": 1,
+          "date": "2023-09-01",
+          "hour": "09:30",
+          "message": "Hola, ¿cómo estás?",
+          "flag": false
+        },
+        {
+          "sendBy": 2,
+          "date": "2023-09-01",
+          "hour": "10:15",
+          "message": "¡Hola! Estoy bien, gracias.",
+          "flag": false
+        }
+      ]
+    }
+  ]
+}

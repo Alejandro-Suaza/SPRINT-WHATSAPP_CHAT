@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.form-container{
+    background: #fff;
+    max-width: 450px;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.form {
+    padding: 25px 30px;   
+    
+    header {
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    form {
+        margin: 20px 0;
+    
+        .error-text {
+            color: #721c24;
+            background: #f8d7da;
+            padding: 8px 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #f5c6cb;
+            display: none;
+        }
+    
+        .field {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            margin-bottom: 10px;  
+            
+            label {
+                margin-bottom: 2px;
+            }
+            input {
+                outline: none;
+            }
+            i {
+                position: absolute;
+                right: 15px;
+                color: #ccc;
+                top: 60%;
+                cursor: pointer;
+            }
+            i.active::before{
+                color:#333;
+                content: "\f070";
+            }
+        }
+        .input {
+            input {
+                height: 40px;
+                width: 100%;
+                font-size: 16px;
+                padding: 0 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+        }
+        .image {
+            input {
+                font-size: 17px;
+            }
+        }
+        .button {
+            input {
+                margin-top: 13px;
+                height: 45px;
+                border: none;
+                font-size: 17px;
+                font-weight: 400;
+                background: #333;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .link {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 17px;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}

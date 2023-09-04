@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHATSAPP CHAT</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <section class="form signup">
+            <header>WhatsApp Chat</header>
+            <form id="sign-form" action="#" autocomplete="off">
+                <div class="error-text"></div>
+                <div class="name-details">
+                    <div class="field input">
+                        <label>Nombre</label>
+                        <input id="name" type="text" placeholder="Nombre" >
+                    </div>
+                    <div class="field input">
+                        <label>Apellido</label>
+                        <input id="lastName" type="text" placeholder="Apellido" >
+                    </div>
+                    <div class="field input">
+                        <label>Numero de Teléfono</label>
+                        <input id="phoneNumber" type="text" placeholder="Numero de Teléfono" >
+                    </div>
+                    <div class="field input">
+                        <label>Contraseña</label>
+                        <input id="password" type="password" placeholder="Ingresa tu nueva Contraseña" >
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="field image">
+                        <label>Foto de Perfil</label>
+                        <input id="img" type="file">
+                    </div>
+                    <div class="field button">
+                        <input id="button-form" type="submit" value="Crear">
+                    </div>
+                </div>
+            </form>
+            <div class="link">¿Ya tienes una cuenta? <a href="#">Ingresar</a></div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/874e183c22.js" crossorigin="anonymous"></script>
+    <script src="./scripts/pass-show-hide.js"></script>
+    <script src="./scripts/signup.js"></script>
+</body>
+</html>
