@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // El inicio de sesión fue exitoso, almacenar información en localStorage o sessionStorage.
             const user = users[0];
             localStorage.setItem("loggedInUser", JSON.stringify(user));
+            
+            // Establecer el estado del usuario como "conectado"
+            localStorage.setItem("userStatus", "conectado");
 
             // Redirige a la página de usuarios.
             window.location.href = "../users.html";

@@ -7,7 +7,7 @@
       "phoneNumber": "12345",
       "password": "contra1",
       "img": "url_img1",
-      "flag": "conectado"
+      "flag": "desconectado" 
     },
     {
       "id": 2,
@@ -16,9 +16,8 @@
       "phoneNumber": "54321",
       "password": "contra2",
       "img": "url_img2",
-      "flag": "conectado"
+      "flag": "desconectado" 
     }
-
   ],
   "messages": [
     {

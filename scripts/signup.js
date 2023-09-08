@@ -35,9 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
               phoneNumber,
               password,
               img,
+              flag: "desconectado", // Establecer el estado inicial del usuario como "desconectado"
             });
 
             if (createUserResponse.status === 201) {
+              // Establecer el estado del usuario como "conectado" después del registro
+              localStorage.setItem("userStatus", "conectado");
               window.location.href = "../users.html";
             } else {
               console.error("Respuesta inesperada del servidor:", createUserResponse);
