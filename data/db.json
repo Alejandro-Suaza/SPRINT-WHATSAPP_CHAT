@@ -17,39 +17,8 @@
       "password": "contra2",
       "img": "url_img2",
       "flag": "conectado"
-    },
-    {
-      "id": 3,
-      "name": "asd",
-      "lastName": "asd",
-      "phoneNumber": "asd",
-      "password": "asd",
-      "img": "C:\\fakepath\\users2.jpg"
-    },
-    {
-      "id": 4,
-      "name": "sdfssd",
-      "lastName": "fsdfsdf",
-      "phoneNumber": "sdfsdfsdfsd",
-      "password": "fsdfsdf",
-      "img": "C:\\fakepath\\users2.jpg"
-    },
-    {
-      "id": 5,
-      "name": "sada",
-      "lastName": "sadasd",
-      "phoneNumber": "asdasda",
-      "password": "sdasd",
-      "img": "C:\\fakepath\\users2.jpg"
-    },
-    {
-      "id": 6,
-      "name": "adf",
-      "lastName": "adfafd",
-      "phoneNumber": "dafadf",
-      "password": "adfaf",
-      "img": "C:\\fakepath\\users2.jpg"
     }
+
   ],
   "messages": [
     {

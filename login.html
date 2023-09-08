@@ -10,26 +10,28 @@
     <div class="form-container">
         <section class="form login">
             <header>WhatsApp Chat</header>
-            <form action="#">
-                <div class="error-text">Mensaje de Error</div>
+            <form id="login-form" action="#" autocomplete="off">
+                <div class="error-text"></div>
                 <div class="field input">
                     <label>Numero de Teléfono</label>
-                    <input type="text" placeholder="Numero de Teléfono">
+                    <input id="phoneNumber" type="text" placeholder="Numero de Teléfono">
                 </div>
                 <div class="field input">
                     <label>Contraseña</label>
-                    <input type="password" placeholder="Ingresa tu Contraseña">
+                    <input id="password" type="password" placeholder="Ingresa tu Contraseña">
                      <i class="fas fa-eye"></i>
                 </div>
                 <div class="field button">
                     <input type="submit" value="Ingresar">
                 </div>
             </form>
-            <div class="link">¿Aun no tienes cuenta? <a href="#">Registrate</a></div>
+            <div class="link">¿Aun no tienes cuenta? <a href="index.html">Registrate</a></div>
         </section>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./scripts/pass-show-hide.js"></script>
+    <script src="./scripts/login.js"></script>
     <script src="https://kit.fontawesome.com/874e183c22.js" crossorigin="anonymous"></script>
 </body>
 </html>
