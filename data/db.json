@@ -17,25 +17,8 @@
       "password": "contra2",
       "img": "url_img2",
       "flag": "desconectado"
-    },
-    {
-      "id": 3,
-      "name": "Cristian",
-      "lastName": "Restrepo",
-      "phoneNumber": "5678",
-      "password": "nose",
-      "img": "C:\\fakepath\\users2.jpg",
-      "flag": "desconectado"
-    },
-    {
-      "id": 4,
-      "name": "Sldlms",
-      "lastName": "sldmms",
-      "phoneNumber": "82382",
-      "password": "sdojs",
-      "img": "C:\\fakepath\\users2.jpg",
-      "flag": "desconectado"
     }
+    
   ],
   "messages": [
     {

@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       errorText.style.display = "block";
     } else {
       try {
-        const response = await axios.get(`http://localhost:3000/users?phoneNumber=${phoneNumber}`);
+        const response = await axios.get(`https://wha-uhex.onrender.com/users?phoneNumber=${phoneNumber}`);
 
         if (response.status === 200) {
           const users = response.data;
@@ -24,22 +24,22 @@ document.addEventListener("DOMContentLoaded", function () {
             errorText.textContent = "Este número ya está registrado.";
             errorText.style.display = "block";
           } else {
-            const lastUserIdResponse = await axios.get("http://localhost:3000/users?_sort=id&_order=desc&_limit=1");
+            const lastUserIdResponse = await axios.get("https://wha-uhex.onrender.com/users?_sort=id&_order=desc&_limit=1");
             const lastUserId = lastUserIdResponse.data[0]?.id || 0;
             const nextUserId = lastUserId + 1;
 
-            const createUserResponse = await axios.post("http://localhost:3000/users", {
+            const createUserResponse = await axios.post("https://wha-uhex.onrender.com/users", {
               id: nextUserId,
               name,
               lastName,
               phoneNumber,
               password,
               img,
-              flag: "desconectado", // Establecer el estado inicial del usuario como "desconectado"
+              flag: "conectado", // Establecer el estado inicial del usuario como "conectado" al registrarse
             });
 
             if (createUserResponse.status === 201) {
-              // Establecer el estado del usuario como "conectado" después del registro
+              // Establecer el estado del usuario como "conectado" en el almacenamiento local
               localStorage.setItem("userStatus", "conectado");
               window.location.href = "../users.html";
             } else {

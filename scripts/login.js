@@ -13,20 +13,29 @@ document.addEventListener("DOMContentLoaded", function () {
       errorText.style.display = "block";
     } else {
       try {
-        const response = await axios.get(`http://localhost:3000/users?phoneNumber=${phoneNumber}&password=${password}`);
+        const response = await axios.get("https://wha-uhex.onrender.com/users?phoneNumber=" + phoneNumber + "&password=" + password);
 
         if (response.status === 200) {
           const users = response.data;
           if (users.length === 1) {
             // El inicio de sesión fue exitoso, almacenar información en localStorage o sessionStorage.
             const user = users[0];
-            localStorage.setItem("loggedInUser", JSON.stringify(user));
             
             // Establecer el estado del usuario como "conectado"
-            localStorage.setItem("userStatus", "conectado");
+            user.flag = "conectado"; // Actualiza el estado en el objeto del usuario
+            const updateUserResponse = await axios.put(`https://wha-uhex.onrender.com/users/${user.id}`, user); // Actualiza el estado en el servidor
 
-            // Redirige a la página de usuarios.
-            window.location.href = "../users.html";
+            if (updateUserResponse.status === 200) {
+              localStorage.setItem("loggedInUser", JSON.stringify(user));
+              localStorage.setItem("userStatus", "conectado");
+
+              // Redirige a la página de usuarios.
+              window.location.href = "../users.html";
+            } else {
+              console.error("Error al actualizar el estado del usuario:", updateUserResponse);
+              errorText.textContent = "Error al iniciar sesión.";
+              errorText.style.display = "block";
+            }
           } else {
             errorText.textContent = "Credenciales incorrectas.";
             errorText.style.display = "block";
