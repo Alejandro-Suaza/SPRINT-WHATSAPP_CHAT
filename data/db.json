@@ -1,7 +1,23 @@
 {
   "users": [
-    
-
+    {
+      "id": 1,
+      "name": "Pepito",
+      "lastName": "Perez",
+      "phoneNumber": "12345",
+      "password": "contra1",
+      "img": "url_img1",
+      "flag": "desconectado"
+    },
+    {
+      "id": 2,
+      "name": "Andres",
+      "lastName": "Cano",
+      "phoneNumber": "54321",
+      "password": "contra2",
+      "img": "url_img2",
+      "flag": "desconectado"
+    }
     
   ],
   "messages": [
