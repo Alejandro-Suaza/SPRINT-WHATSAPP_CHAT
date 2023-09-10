@@ -40,7 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (createUserResponse.status === 201) {
               // Establecer el estado del usuario como "conectado" en el almacenamiento local
+              localStorage.setItem("loggedInUserPhoneNumber", phoneNumber);
+              localStorage.setItem("loggedInUserPassword", password);
               localStorage.setItem("userStatus", "conectado");
+              
+              // Redirige a la página de usuarios después del registro exitoso
               window.location.href = "../users.html";
             } else {
               console.error("Respuesta inesperada del servidor:", createUserResponse);

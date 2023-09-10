@@ -21,21 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
             // El inicio de sesión fue exitoso, almacenar información en localStorage o sessionStorage.
             const user = users[0];
             
-            // Establecer el estado del usuario como "conectado"
-            user.flag = "conectado"; // Actualiza el estado en el objeto del usuario
-            const updateUserResponse = await axios.put(`https://wha-uhex.onrender.com/users/${user.id}`, user); // Actualiza el estado en el servidor
+            // Almacenar credenciales y estado en el almacenamiento local
+            localStorage.setItem("loggedInUserPhoneNumber", phoneNumber);
+            localStorage.setItem("loggedInUserPassword", password);
+            localStorage.setItem("userStatus", "conectado");
 
-            if (updateUserResponse.status === 200) {
-              localStorage.setItem("loggedInUser", JSON.stringify(user));
-              localStorage.setItem("userStatus", "conectado");
-
-              // Redirige a la página de usuarios.
-              window.location.href = "../users.html";
-            } else {
-              console.error("Error al actualizar el estado del usuario:", updateUserResponse);
-              errorText.textContent = "Error al iniciar sesión.";
-              errorText.style.display = "block";
-            }
+            // Redirige a la página de usuarios.
+            window.location.href = "../users.html";
           } else {
             errorText.textContent = "Credenciales incorrectas.";
             errorText.style.display = "block";
