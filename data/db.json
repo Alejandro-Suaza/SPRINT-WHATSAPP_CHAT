@@ -7,7 +7,7 @@
       "phoneNumber": "12345",
       "password": "contra1",
       "img": "url_img1",
-      "flag": "desconectado" 
+      "flag": "desconectado"
     },
     {
       "id": 2,
@@ -16,7 +16,25 @@
       "phoneNumber": "54321",
       "password": "contra2",
       "img": "url_img2",
-      "flag": "desconectado" 
+      "flag": "desconectado"
+    },
+    {
+      "id": 3,
+      "name": "Cristian",
+      "lastName": "Restrepo",
+      "phoneNumber": "5678",
+      "password": "nose",
+      "img": "C:\\fakepath\\users2.jpg",
+      "flag": "desconectado"
+    },
+    {
+      "id": 4,
+      "name": "Sldlms",
+      "lastName": "sldmms",
+      "phoneNumber": "82382",
+      "password": "sdojs",
+      "img": "C:\\fakepath\\users2.jpg",
+      "flag": "desconectado"
     }
   ],
   "messages": [
