@@ -6,8 +6,8 @@
       "lastName": "Perez",
       "phoneNumber": "12345",
       "password": "contra1",
-      "img": "url_img1",
-      "flag": "desconectado"
+      "img": "user_img1",
+      "flag": ""
     },
     {
       "id": 2,
@@ -15,10 +15,10 @@
       "lastName": "Cano",
       "phoneNumber": "54321",
       "password": "contra2",
-      "img": "url_img2",
-      "flag": "desconectado"
+      "img": "user_img2",
+      "flag": ""
     }
-    
+
   ],
   "messages": [
     {

@@ -11,9 +11,9 @@
         <section class="users">
             <header>
                 <div class="content">
-                    <img src="./img/users1.jpg" alt="">
+                    <img id="user-img" src="./img/" alt="">
                     <div class="details">
-                        <span>Pepito Perez</span>
+                        <span id="user-name"></span>
                         <p>En linea</p>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                 <button><i class="fas fa-search"></i></button>
             </div>
             <div class="users-list">
-                <a href="#">
+                <!-- <a href="#">
                     <div class="content">
                         <img src="./img/users2.jpg" alt="">
                         <div class="details">
@@ -84,12 +84,13 @@
                         </div>
                     </div>
                     <div class="status-dot"><i class="fas fa-circle"></i></div>
-                </a>
+                </a> -->
             </div>
         </section>
     </div>
 
-    <script src="./scripts/users.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/userInterface.js"></script>
     <script src="./scripts/search.js"></script>
     <script src="https://kit.fontawesome.com/874e183c22.js"></script>
 </body>
