@@ -25,12 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
             
             await updateUserStatus(user.id, "conectado");
 
-            // Almacenar credenciales y estado en el almacenamiento local
             localStorage.setItem("loggedInUserId", user.id);
             localStorage.setItem("loggedInUserPhoneNumber", phoneNumber);
             localStorage.setItem("userStatus", "conectado");
 
-            // Redirige a la página de usuarios.
+
             window.location.href = "../users.html";
           } else {
             errorText.textContent = "Credenciales incorrectas.";
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Función para actualizar el estado del usuario en la base de datos
   async function updateUserStatus(userId, status) {
     try {
       const response = await axios.patch(`https://wha-uhex.onrender.com/users/${userId}`, {
