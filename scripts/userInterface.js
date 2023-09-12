@@ -1,3 +1,5 @@
+/* const socket = io(); */
+
 document.addEventListener("DOMContentLoaded", async function () {
     const loggedInUserPhoneNumber = localStorage.getItem("loggedInUserPhoneNumber");
     const userStatus = localStorage.getItem("userStatus");
@@ -37,4 +39,27 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
     }
   });
+  
+
+/*   document.addEventListener("DOMContentLoaded", async function () {
+    const loggedInUserPhoneNumber = localStorage.getItem("loggedInUserPhoneNumber");
+    const userStatus = localStorage.getItem("userStatus");
+  
+    if (loggedInUserPhoneNumber && userStatus === "conectado") {
+      // Escucha las actualizaciones de usuarios a través de socket.io
+      socket.on('userUpdate', (user) => {
+        // Renderiza la información del usuario en la interfaz del usuario
+        renderUserInfo(user);
+      });
+    }
+  });
+  
+  function renderUserInfo(user) {
+    // Código para renderizar la información del usuario actual en la interfaz de usuario
+    const userNameElement = document.getElementById("user-name");
+    const userImgElement = document.getElementById("user-img");
+    userImgElement.src = user.img;
+    userNameElement.innerHTML = `${user.name} ${user.lastName}`;
+    // Otros campos de la interfaz pueden actualizarse de manera similar
+  } */
   
