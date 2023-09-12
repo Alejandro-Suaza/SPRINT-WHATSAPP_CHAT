@@ -6,7 +6,7 @@
       "lastName": "Perez",
       "phoneNumber": "12345",
       "password": "contra1",
-      "img": "users1.jpg",
+      "img": "user_img1",
       "flag": ""
     },
     {
@@ -15,7 +15,7 @@
       "lastName": "Cano",
       "phoneNumber": "54321",
       "password": "contra2",
-      "img": "users2.jpg",
+      "img": "user_img2",
       "flag": ""
     }
 
